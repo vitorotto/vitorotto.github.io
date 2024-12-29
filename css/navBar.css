@@ -1,0 +1,131 @@
+.navBar {
+    position: fixed;
+    top: 0;
+    background-color: rgba(155, 155, 155, 0.459);
+    backdrop-filter: blur(10px);
+    color: black;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    z-index: 1;
+}
+
+.logo {
+    padding: 0 15px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: black;
+    transition: 200ms;
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
+.logo a:hover {
+    color: white;
+}
+
+.nav-links-desktop {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links-desktop li {
+    padding: 0 15px;
+}
+
+.nav-links-desktop a,
+.nav-links-mobile a {
+    color: black;
+    text-decoration: none;
+    transition: 200ms;
+    font-size: 1.1rem;
+}
+
+.nav-links-desktop a:hover,
+.nav-links-mobile a:hover {
+    color: white
+}
+
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 60%;
+    background-color: rgba(155, 155, 155, 0.459);
+    backdrop-filter: blur(10px);
+
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.8rem;
+}
+
+.nav-links-mobile {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 30px 0;
+    width: 100%;
+    height: 100%;
+}
+
+.nav-links-mobile li {
+    width: 80%;
+    padding: 30px 0;
+    border-bottom: 1px solid rgba(117, 144, 218, 0.603);
+}
+
+.nav-links-mobile li:last-child {
+    border: none;
+}
+
+.hamburger,
+.close {
+    padding: 0 15px;
+    background: none;
+    border: none;
+    color: #000;
+    cursor: pointer;
+    transition: 200ms;
+    display: none;
+
+    font-size: 1.6rem;
+}
+
+.close {
+    display: block;
+    align-self: end;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.hamburger:hover,
+.close:hover {
+    color:white;
+}
+
+@media (max-width: 768px) {
+
+    .nav-links-desktop {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+/* CLASSES JAVASCRIPT */
+.flex {
+    display: flex;
+}

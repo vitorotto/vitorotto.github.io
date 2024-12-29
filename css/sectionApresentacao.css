@@ -1,0 +1,115 @@
+.apresentacao {
+    height: 80vh;
+    width: 100vw;
+    max-width: 1280px;
+    margin: 5vh auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.texto-banner {
+    background-color: rgb(67, 118, 212);
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.205);
+    border-radius: 10px;
+    padding: 2rem;
+    font-size: 2.5rem;
+    transition: 300ms;
+}
+
+.texto-banner h1 {
+    color: white;
+    font-weight: 1000;
+    text-shadow:  0px 0px 20px #ffffff6e;
+}
+
+.borda-perfil {
+    background-color: gray;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.imgPerfil-banner {
+    background-image: url(../img/perfil.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 500px;
+    border-radius: 5px;
+}
+
+.container-img-perfil {
+    border-radius: none;
+    transition: 400ms;
+    width: 380px;
+    height: 500px;   
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.social-icons i {
+    font-size: 50px;
+    color: white;
+    transition: 300ms;
+}
+
+.social-icons i:hover {
+    color: black;
+}
+
+@media (max-width: 1000px) {
+    .texto-banner { 
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 950px) {
+    .apresentacao {
+        margin-top: 90px;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .texto-banner {
+        font-size: 1.5rem;
+        margin-bottom: 2vh;
+    }
+
+    .borda-perfil {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .imgPerfil-banner {
+        width: 180px;
+        height: 300px;
+    }
+    
+    .container-img-perfil {
+        width: 200px;
+        height: 300px;
+        margin-bottom: 60px;
+
+    }
+
+    .social-icons {
+        flex-direction: row;
+    }
+
+    .social-icons i {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 320px) {
+    .texto-banner {
+        font-size: 1.05rem;
+    }
+}

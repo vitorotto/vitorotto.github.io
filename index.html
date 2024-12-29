@@ -1,79 +1,101 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vitor Hugo Otto</title>
 
-    <!--CSS-->
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/section_sobre.css">
-    <!-- <link rel="stylesheet" href="css/carrossel.css"> -->
-    <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-    <!--Fontes-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="css/generalStyle.css">
+    <link rel="stylesheet" href="css/navBar.css">
+    <link rel="stylesheet" href="css/sectionApresentacao.css">
+    <link rel="stylesheet" href="css/sectionInformacoes.css">
+    <link rel="stylesheet" href="css/sectionProjetos.css">
 </head>
-
 <body>
-    <header id="header">
-        <nav>
-            <a href="index.html" class="logo">Otto Developer</a>
-            <div class="mobile-menu">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
+    <nav class="navBar">
+        <div class="logo">
+            <span><a href="#">Vitor Hugo</a></span>
+        </div>
 
-            <ul class="menu">
+        <section class="menu-Desktop">
+            <ul class="nav-links-desktop">
                 <li><a href="#">Contato</a></li>
                 <li><a href="#">Sobre</a></li>
+                <li><a href="#">Tecnologias</a></li>
                 <li><a href="#">Projetos</a></li>
-                <li><a href="#">Linguagens</a></li>
             </ul>
-        </nav>
-    </header>
+        </section>
 
-    <section class="banner">
-        <h1>Vitor Hugo <span>OTTO</span></h1>
+        <section class="mobile-menu" id="mobileMenu">
+            <button class="close" id="closeButton">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <ul class="nav-links-mobile">
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Tecnologias</a></li>
+                <li><a href="#">Projetos</a></li>
+            </ul>
+        </section>
+        <button class="hamburger" id="hamburgerButton">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </nav>
+
+    <section class="apresentacao">
+        <div class="texto-banner">
+            <p>Olá, prazer!</p>
+            <h1>Vitor H. Otto</h1>
+            <p>Desenvolvedor WEB</p>
+            <p>Estudante da Faccat</p>
+        </div>
+
+        <div class="container-img-perfil">
+            <div class="borda-perfil">
+                <div class="imgPerfil-banner"></div>
+                <div class="social-icons">
+                    <a href="https://github.com/vitorotto" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/vitor-hugo-otto-18a306263/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/ottovitorhugo/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            
+        </div>
+
     </section>
 
-    <div class="container">
-
+    <section class="informacoes">
         <section class="sobre">
-            <h2>Sobre mim</h2>
-            <div class="line"></div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos adipisci nisi delectus sunt, ea harum earum
-                deleniti aspernatur a labore ullam est eveniet asperiores aperiam soluta hic. Ut deleniti, maiores eos
-                reprehenderit tempora sit, nulla odio voluptas rerum debitis doloribus.</p>
+            <h1 class="h1-info">Sobre Mim</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi sit consequuntur facere iste omnis amet aspernatur excepturi, unde doloribus quisquam minima velit, ipsum assumenda esse maiores, illo neque! Ipsam, tempore.</p>
         </section>
-
-        <section class="projetos">
-            <h2>Projetos</h2>
-            <div class="item1"></div>
-            <div class="item2"></div>
+        <section class="infos">
+            <div class="habilidades info-single">
+                <i class="fa-solid fa-code"></i>
+                <h1 class="h1-info">Habilidades</h1>
+                <p>HTML, CSS, Javascript</p>
+            </div>
+            <div class="educacao info-single">
+                <i class="fa-solid fa-school"></i>
+                <h1 class="h1-info">Educacao</h1>
+                <p>Tecnico em Sistemas Para Internet na Faccat</p>
+            </div>
+            <div class="experiencia info-single">
+                <i class="fa-solid fa-briefcase"></i>
+                <h1 class="h1-info">Experiencia</h1>
+                <p>Em busca da primeira oportunidade</p>
+            </div>
         </section>
+    </section>
 
-        <section class="linguagens">
-            <h2>Linguagens que eu uso</h2>
-            <ul>
-                <li><a href="#">JavaScript</a></li>
-            </ul>
-        </section>
+    <section class="projetos">
+        <h1 class="h1-projetos">Projetos</h1>
+        <p>Em breve... </p>
+        <i class="fa-solid fa-lock"></i>
+    </section>
 
-        <footer>
-            <h4>Rodape</h4>
-        </footer>
-
-    </div>
-
-    <script src="javascript/nav_scroll.js"></script>
-    <script src="javascript/mobile_navBar.js"></script>
+    <script src="js/mobileNav.js"></script>
 </body>
-
 </html>

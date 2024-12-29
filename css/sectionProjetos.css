@@ -1,0 +1,22 @@
+.projetos {
+    background-color: rgba(155, 155, 155, 0.459);
+    backdrop-filter: blur(10px);
+    width: 80vw;
+    text-align: center;
+    margin: 3vh auto;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.h1-projetos {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 10px;
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.486);
+}
+
+.projetos i {
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.486);
+    margin-top: 10px;
+}

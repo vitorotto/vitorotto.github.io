@@ -1,0 +1,40 @@
+.informacoes {
+    background-color: rgba(155, 155, 155, 0.459);
+    backdrop-filter: blur(10px);
+    width: 80vw;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.h1-info {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 10px;
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.486);
+}
+
+.sobre {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.sobre h1 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.infos {
+    margin: 30px 0;
+}
+
+.infos i {
+    font-size: 3rem;
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.486);
+}
+
+.info-single {
+    margin: 30px 0;
+}
