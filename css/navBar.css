@@ -59,9 +59,7 @@
     top: 0;
     right: 0;
     width: 60%;
-    background-color: rgba(155, 155, 155, 0.459);
-    backdrop-filter: blur(10px);
-
+    background-color: gray;
     flex-direction: column;
     align-items: center;
     font-size: 1.8rem;
