@@ -26,13 +26,13 @@ class MobileMenu {
 
     openMenu() {
         this.hamburgerButton.addEventListener('click', () => {
-            this.mobileMenu.classList.add('flex')
+            this.mobileMenu.classList.add('active')
         })
     }
 
     closeMenu() {
         this.closeButton.addEventListener('click', () => {
-            this.mobileMenu.classList.remove('flex')
+            this.mobileMenu.classList.remove('active')
         })
     }
 
