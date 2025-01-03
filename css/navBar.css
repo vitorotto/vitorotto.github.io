@@ -63,6 +63,8 @@
     flex-direction: column;
     align-items: center;
     font-size: 1.8rem;
+    height: 100vh;
+    overflow-y: auto;
 }
 
 .nav-links-mobile {
