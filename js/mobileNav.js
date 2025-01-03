@@ -11,7 +11,7 @@ class MobileMenu {
     // Função que verifica se o clique foi fora do menu
     handleOutsideClick(event) {
         // Verifica se o menu está aberto (tem a classe flex)
-        const isMenuOpen = this.mobileMenu.classList.contains('flex')
+        const isMenuOpen = this.mobileMenu.classList.contains('active')
         
         // Verifica se o clique NÃO foi no menu, no botão hamburguer ou no botão de fechar
         const clickedOutside = !this.mobileMenu.contains(event.target) && 
@@ -20,7 +20,7 @@ class MobileMenu {
 
         // Se o menu estiver aberto E o clique foi fora, fecha o menu
         if (isMenuOpen && clickedOutside) {
-            this.mobileMenu.classList.remove('flex')
+            this.mobileMenu.classList.remove('active')
         }
     }
 
