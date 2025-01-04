@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,9 +11,11 @@
     <link rel="stylesheet" href="css/generalStyle.css">
     <link rel="stylesheet" href="css/navBar.css">
     <link rel="stylesheet" href="css/sectionApresentacao.css">
+    <link rel="stylesheet" href="css/cardStyle.css">
     <link rel="stylesheet" href="css/sectionInformacoes.css">
     <link rel="stylesheet" href="css/sectionProjetos.css">
 </head>
+
 <body>
     <nav class="navBar">
         <div class="logo">
@@ -53,15 +56,28 @@
         </div>
 
         <div class="container-img-perfil">
-            <div class="borda-perfil">
-                <div class="imgPerfil-banner"></div>
-                <div class="social-icons">
-                    <a href="https://github.com/vitorotto" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/vitor-hugo-otto-18a306263/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://www.instagram.com/ottovitorhugo/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-images">
+                            <img src="img/fundoPerfil.png" alt="Fundo branco Freepik" srcset="" class="card-bg">
+                            <img src="img/perfilSemFundo.png" alt="" class="card-figure glass-bg-perfil">
+                        </div>
+                        <div class="card-info">
+                            <h2 class="card-name">Vitor Hugo</h2>
+                             <p class="card-description"><a href="#">Fale comigo</a></p>
+                            <div class="card-media">
+                                <a href="https://github.com/vitorotto" target="_blank"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a href="https://www.linkedin.com/in/vitor-hugo-otto-18a306263/" target="_blank"><i
+                                        class="fa-brands fa-linkedin"></i></a>
+                                <a href="https://www.instagram.com/ottovitorhugo/" target="_blank"><i
+                                        class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            
         </div>
 
     </section>
@@ -69,7 +85,11 @@
     <section class="informacoes">
         <section class="sobre">
             <h1 class="h1-info">Sobre Mim</h1>
-            <p>Sou Vitor Hugo Otto, estudante de desenvolvimento web apaixonado por transformar ideias em projetos funcionais e impactantes. Minha motivação é aprender continuamente e me especializar em tecnologias modernas para oferecer soluções inovadoras que atendam às expectativas dos meus clientes e proporcionem experiências excepcionais. Estou sempre em busca de aprimorar minhas habilidades para unir criatividade e eficiência no desenvolvimento de aplicações de alto valor.</p>
+            <p>Sou Vitor Hugo Otto, estudante de desenvolvimento web apaixonado por transformar ideias em projetos
+                funcionais e impactantes. Minha motivação é aprender continuamente e me especializar em tecnologias
+                modernas para oferecer soluções inovadoras que atendam às expectativas dos meus clientes e proporcionem
+                experiências excepcionais. Estou sempre em busca de aprimorar minhas habilidades para unir criatividade
+                e eficiência no desenvolvimento de aplicações de alto valor.</p>
         </section>
         <section class="infos">
             <div class="habilidades info-single">
@@ -97,5 +117,7 @@
     </section>
 
     <script src="js/mobileNav.js"></script>
+    <script src="js/efeitos3dCard.js"></script>
 </body>
+
 </html>
