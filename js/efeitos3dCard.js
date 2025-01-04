@@ -34,11 +34,12 @@ const cardDescription = card.querySelector('.card-description')
 const cardMedia = card.querySelector('.card-media')
 
 // Adicionando
-card.addEventListener('mousemove', () => {
+card.addEventListener('mouseover', () => {
     cardFigure.style.transform = 'translate3d(0, 0, 150px)'
     cardName.style.transform = 'translate3d(0, 0, 180px)'
     cardDescription.style.transform = 'translate3d(0, 0, 190px)'
     cardMedia.style.transform = 'translate3d(0, 0, 140px)'
+    cardMedia.style.transition = 'none'
 })
 
 // Removendo quando o mouse sair de cima
@@ -48,6 +49,8 @@ card.addEventListener('mouseout', () => {
     cardName.style.transform = 'translate3d(0, 0, 0)'
     cardDescription.style.transform = 'translate3d(0, 0, 0)'
     cardMedia.style.transform = 'translate3d(0, 0, 0)'
+
+    cardMedia.style.transition = 'transform 500ms ease'
 
     // Removendo a rotacao
     card.style.transform = `rotateY(0deg) rotateX(0deg)`
