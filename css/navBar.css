@@ -160,6 +160,12 @@
     color:white;
 }
 
+@media screen and (max-height: 620px) {
+    .mobile-menu.active {
+        height: calc(100vh - 30px); /* Ativa o scroll do menu mobile */
+    }
+}
+
 @media (max-width: 768px) {
 
     .nav-links-desktop {
