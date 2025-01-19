@@ -1,11 +1,11 @@
 .projetos {
-    background-color: rgba(155, 155, 155, 0.459);
-    backdrop-filter: blur(10px);
-    width: 80vw;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    max-width: 1920px;
     text-align: center;
-    margin: 3vh auto;
+    margin: 0 auto;
+    margin-top: 3vh;
     padding: 20px;
-    border-radius: 20px;
 }
 
 .h1-projetos {
@@ -13,10 +13,10 @@
     font-size: 2rem;
     font-weight: bold;
     margin: 10px;
-    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.486);
+    text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.486);
 }
 
 .projetos i {
-    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.486);
+    text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.486);
     margin-top: 10px;
 }

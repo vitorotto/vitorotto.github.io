@@ -1,9 +1,9 @@
 .apresentacao {
     height: 80vh;
     width: 95vw;
-    max-width: 1280px;
+    max-width: 1920px;
     min-height: 700px;
-    margin: 5vh auto;
+    margin: 0 auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -16,6 +16,7 @@
     padding: 2rem;
     font-size: 2.5rem;
     transition: 300ms;
+    z-index: 1;
 }
 
 .texto-banner h1 {
