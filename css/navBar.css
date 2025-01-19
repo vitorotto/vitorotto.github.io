@@ -109,7 +109,7 @@
 
 .mobile-menu.active {
     transform: translateX(-5vw); /* Desliza para dentro da tela */
-    opacity: 1; /* Torna o menu visível */
+
 }
 
 
@@ -160,9 +160,15 @@
     color:white;
 }
 
+/* Ativa o scroll do menu mobile */
 @media screen and (max-height: 620px) {
     .mobile-menu.active {
-        height: calc(100vh - 30px); /* Ativa o scroll do menu mobile */
+        height: calc(80vh - 30px);
+    }
+    
+    /* CLASSE JS - deixa o tamanho do menu estável quando ele é fechado */
+    .fix-hight-menu-out {
+        height: calc(80vh - 30px);
     }
 }
 
