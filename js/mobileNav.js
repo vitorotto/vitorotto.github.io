@@ -1,11 +1,13 @@
 class MobileMenu {
-    constructor(hamburgerButton, closeButton, mobileMenu) {
+    constructor(hamburgerButton, closeButton, mobileMenu, body) {
         this.hamburgerButton = document.querySelector(hamburgerButton)
         this.closeButton = document.querySelector(closeButton)
         this.mobileMenu = document.querySelector(mobileMenu)
+        this.body = document.querySelector(body)
         
         // Adiciona o event listener do clique fora usando bind para manter o contexto
         document.addEventListener('click', this.handleOutsideClick.bind(this))
+        document.addEventListener('click', this.scrollBlock.bind(this))
     }
 
     // Função que verifica se o clique foi fora do menu
@@ -22,6 +24,17 @@ class MobileMenu {
         if (isMenuOpen && clickedOutside) {
             this.mobileMenu.classList.remove('active')
         }
+    }
+
+    // função para bloquear o scroll com o menu mobile aberto
+    scrollBlock() {
+        const isMenuOpen = this.mobileMenu.classList.contains('active')
+        console.log('aberto')
+        if (isMenuOpen) {
+            this.body.classList.add('scroll-block')
+        } else (
+            this.body.classList.remove('scroll-block')
+        )
     }
 
     openMenu() {
@@ -46,5 +59,6 @@ const mobileMenu = new MobileMenu(
     '#hamburgerButton',
     '#closeButton',
     '#mobileMenu',
+    'body'
 )
 mobileMenu.init()
