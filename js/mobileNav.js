@@ -23,6 +23,10 @@ class MobileMenu {
         // Se o menu estiver aberto E o clique foi fora, fecha o menu
         if (isMenuOpen && clickedOutside) {
             this.mobileMenu.classList.remove('active')
+            this.mobileMenu.classList.add('fix-hight-menu-out')
+            setTimeout(() => {
+                this.mobileMenu.classList.remove('fix-hight-menu-out')
+            }, 400)
         }
     }
 
@@ -32,9 +36,9 @@ class MobileMenu {
         console.log('aberto')
         if (isMenuOpen) {
             this.body.classList.add('scroll-block')
-        } else (
+        } else {
             this.body.classList.remove('scroll-block')
-        )
+        }
     }
 
     openMenu() {
@@ -46,6 +50,10 @@ class MobileMenu {
     closeMenu() {
         this.closeButton.addEventListener('click', () => {
             this.mobileMenu.classList.remove('active')
+            this.mobileMenu.classList.add('fix-hight-menu-out')
+            setTimeout(() => {
+                this.mobileMenu.classList.remove('fix-hight-menu-out')
+            }, 400)
         })
     }
 
