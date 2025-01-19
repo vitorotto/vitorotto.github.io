@@ -1,7 +1,8 @@
 .apresentacao {
     height: 80vh;
-    width: 100vw;
+    width: 95vw;
     max-width: 1280px;
+    min-height: 700px;
     margin: 5vh auto;
     display: flex;
     justify-content: space-around;
