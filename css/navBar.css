@@ -110,8 +110,6 @@
 .mobile-menu.active {
     transform: translateX(-5vw); /* Desliza para dentro da tela */
     opacity: 1; /* Torna o menu visível */
-    height: calc(100vh - 30px); /* Ativa o scroll do menu mobile */
-
 }
 
 
@@ -182,4 +180,8 @@
 /* CLASSES JAVASCRIPT */
 .flex {
     display: flex;
+}
+
+.scroll-block {
+    overflow:hidden;
 }
